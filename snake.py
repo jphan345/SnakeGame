@@ -36,9 +36,6 @@ class Snake:
 
     def touching_self(self) -> bool:
         snake_length = len(self._positions)
-
-        print(self._head)
-        print(self._positions[:snake_length - 1])
         if self._head in self._positions[:snake_length - 1]:
             return True
         else:
