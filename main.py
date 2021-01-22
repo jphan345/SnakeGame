@@ -1,4 +1,5 @@
 # main.py
+
 from snake import Snake
 from snack import Snack
 

@@ -1,2 +1,3 @@
 # SnakeGame
- Snake game made with Python
+ Snake game made with Python.
+ 
