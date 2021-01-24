@@ -11,11 +11,11 @@ def print_game(my_snake: Snake, my_snack, size: int):
     for square in range(size - 1, -1, -1):
         for row in range(size):
             if (row, square) in snake_pos:
-                print('X', end='  ')
+                print('⬜', end=' ')
             elif (row, square) == snack_pos:
-                print('A', end='  ')
+                print('🔷', end=' ')
             else:
-                print('0', end='  ')
+                print('⬛', end=' ')
         print()
 
 
