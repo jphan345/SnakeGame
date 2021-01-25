@@ -5,12 +5,12 @@ from snack import Snack
 
 
 def print_game(my_snake: Snake, my_snack, size: int):
-    snake_pos = my_snake.get_pos()
+    snake_pos_list = my_snake.get_pos()
     snack_pos = my_snack.get_pos()
 
     for square in range(size - 1, -1, -1):
         for row in range(size):
-            if (row, square) in snake_pos:
+            if (row, square) in snake_pos_list:
                 print('⬜', end=' ')
             elif (row, square) == snack_pos:
                 print('🔷', end=' ')
