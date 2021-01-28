@@ -11,14 +11,10 @@ class Snack:
     def get_pos(self):
         return self._x, self._y
 
-    def change_pos(self):
-        new_x = random.randint(0, 14)
-        while new_x == self._x:
-            new_x = random.randint(0, 14)
+    def change_pos(self, off_limits: list):
+        self._x = random.randint(0, 14)
+        self._y = random.randint(0, 14)
 
-        new_y = random.randint(0, 14)
-        while new_y == self._y:
-            new_y = random.randint(0, 14)
-
-        self._x = new_x
-        self._y = new_y
+        while (self._x, self._y) in off_limits:
+            self._x = random.randint(0, 14)
+            self._y = random.randint(0, 14)
