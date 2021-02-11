@@ -35,5 +35,5 @@ class Tile:
 
     def draw(self) -> None:
         # noinspection PyRedundantParentheses
-        tile = ((self._pos), (self._size, self._size))  # Pygame Rect: (position: tuple, size: tuple)
+        tile = pygame.Rect((self._pos), (self._size, self._size))  # Pygame Rect: (position: tuple, size: tuple)
         pygame.draw.rect(self._display, self._color, tile)
