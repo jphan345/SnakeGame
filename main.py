@@ -1,5 +1,6 @@
 # main.py
 
+from config import board_size, screen_size
 from snake import Snake
 from snack import Snack
 from tile import Tile
@@ -51,8 +52,6 @@ if __name__ == '__main__':
 
     clock = pygame.time.Clock()
 
-    board_size = 20
-    screen_size = (1080, 1080)
     display = pygame.display.set_mode(screen_size)
 
     snake = Snake(board_size)
