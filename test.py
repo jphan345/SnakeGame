@@ -1,8 +1,6 @@
-x = 0
-y = 0
+import numpy as np
 
-if x == 0:
-    if y == 0:
-        z = 1
+x = np.arange(1, 21)
+y = np.random.choice(x)
 
-print(z)
+print(x)
